@@ -1,6 +1,7 @@
 FILES = run-test.php test-files
 test: $(FILES)
 	bpc -v \
+	    -c ../../zf1/library/Zend/zend.bpc.conf \
 	    -o test \
 	    -u phpunit \
 	    -u phpunit-ext \
